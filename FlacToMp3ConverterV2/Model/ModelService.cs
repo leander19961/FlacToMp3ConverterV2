@@ -47,7 +47,7 @@ namespace FlacToMp3ConverterV2.Model
 
         public void ChangePath(FlacToMP3ConverterPath flacToMP3ConverterPath, string newPath)
         {
-            flacToMP3ConverterPath.Path = newPath;
+            flacToMP3ConverterPath.Path = newPath.Replace("\"", "");
         }
 
         public List<FlacFile> GetFlacFiles()
